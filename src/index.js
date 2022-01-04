@@ -5,7 +5,7 @@ module.exports = function toReadable(number) {
 
     string = string.replace(/[, ]/g, "");
 
-    units = [
+    const units = [
         "",
         "one",
         "two",
@@ -28,7 +28,7 @@ module.exports = function toReadable(number) {
         "nineteen",
     ];
 
-    dozens = [
+    const dozens = [
         "",
         "",
         "twenty",
@@ -40,7 +40,7 @@ module.exports = function toReadable(number) {
         "eighty",
         "ninety",
     ];
-    ten_powers = [
+    const ten_powers = [
         "",
         "thousand",
         "million",
