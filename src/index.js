@@ -1,9 +1,9 @@
 module.exports = function toReadable(number) {
+    if (number === 0) return "zero";
+
     let string = number.toString();
 
     string = string.replace(/[, ]/g, "");
-
-    if (parseInt(string) === 0) return "zero";
 
     units = [
         "",
